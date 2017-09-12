@@ -21,15 +21,12 @@ function  translate(address) {
 
     var buf = a.toBuffer();
     var ver = buf[0];
-console.log('[cash.js.23:ver:]',ver); //TODO
 
     var a2 = bitcore.Address.fromBuffer(buf);
     if (ver == 0) buf[0] = 28;
     if (ver == 5) buf[0] = 40;
 
     a2 = bitcoreCash.Address.fromBuffer(buf);
-console.log('[cash.js.30:a2:]',a2.toObject()); //TODO
-console.log('[cash.js.30:a2:]',a2.toBuffer()); //TODO
   } catch (e){
     console.error(e);
     try {
