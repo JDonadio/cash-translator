@@ -1,0 +1,17 @@
+{
+  "name": "cash-translator",
+  "description": "Bitcoin Cash address translator",
+  "author": "Matias Alejo Garcia <ematiu@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "bitcore-lib": "^0.14.0",
+    "bitcore-lib-cash": "https://github.com/bitpay/bitcore-lib.git#cash"
+  },
+  "engine": "node >= 8.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:matiu/cash-translator.git",
+    "type": "git"
+  }
+}
